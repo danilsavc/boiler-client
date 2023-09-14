@@ -1,10 +1,11 @@
+import React from "react";
 import "./App.css";
-import Header from "./components/Header/index";
+import AppRouter from "./components/AppRouter";
 
 function App() {
   return (
     <div className='App font-body'>
-      <Header />
+      <AppRouter />
     </div>
   );
 }

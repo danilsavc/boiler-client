@@ -4,25 +4,24 @@ import menu from "../../Assets/Img/menu.svg";
 
 const Header = () => {
   return (
-    <div>
-      <div>
-        <h1>The Boiler room</h1>
-        <h3>coffe & more</h3>
-      </div>
-      <div>
-        <button>
-          <img src={menu} alt='menu' className='w-4 h-4' />
-        </button>
-      </div>
-      <nav>
-        <div>
-          <span>Меню</span>
+    <>
+      <div className='flex justify-between items-center h-28'>
+        <div className=''>
+          <h1 className='cursor-pointer text-2xl font-bold'>The Boiler room</h1>
+          <h3 className='cursor-pointer text-xl font-semibold'>coffe & more</h3>
         </div>
-        <div>
-          <span>Залишити відгук</span>
+        <div className=''>
+          <button className='w-12 h-12 flex justify-center items-center border border-gray-300 rounded-md hover:border-orange-500 transition ease-in-out'>
+            <img src={menu} alt='menu' className='w=6 h-6' />
+          </button>
         </div>
+      </div>
+
+      <nav className='font-semibold'>
+        <span className='hover:text-orange-500 cursor-pointer'>Меню</span>
+        <span className='hover:text-orange-500 ml-5 cursor-pointer'>Залишити відгук</span>
       </nav>
-    </div>
+    </>
   );
 };
 

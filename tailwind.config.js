@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        boilerColor: "#FF6363",
+        h3: "#6B7280",
       },
       fontFamily: {
         body: ["Inter"],

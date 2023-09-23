@@ -4,11 +4,12 @@ import Header from "./Header";
 
 const Layout = () => {
   return (
-    <div className='mx-auto max-w-6xl'>
+    <div>
       <Header />
-      <div>
+      <div className='mx-auto max-w-6xl'>
         <Outlet />
       </div>
+      sad
     </div>
   );
 };

@@ -27,7 +27,7 @@ const block = [
 
 const Rightbar = () => {
   return (
-    <div className='m-3 flex flex-col gap-3'>
+    <aside className='p-3 flex flex-col gap-3 bg-white'>
       <h3 className='text-h3 font-semibold'>Інформація про заклад</h3>
       <div className='flex flex-col gap-3'>
         {block.map((index, key) => (
@@ -40,7 +40,7 @@ const Rightbar = () => {
         <img src={message} alt='message' className='h-6 w-6' />
         <span className='font-bold'>Надіслати відгук</span>
       </button>
-    </div>
+    </aside>
   );
 };
 

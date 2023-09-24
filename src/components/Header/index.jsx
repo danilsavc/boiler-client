@@ -4,8 +4,8 @@ import menu from "../../Assets/Img/menu.svg";
 
 const Header = () => {
   return (
-    <div className='w-screen shadow-md h-28 fixed z-10 bg-white'>
-      <div className='flex flex-col mx-auto max-w-6xl gap-3 pt-3'>
+    <div className='w-screen shadow-md fixed z-10 bg-white'>
+      <div className='flex flex-col mx-auto max-w-6xl gap-3 py-3'>
         <div className='flex justify-between items-center'>
           <div className=''>
             <h1 className='cursor-pointer text-2xl font-bold'>The Boiler room</h1>

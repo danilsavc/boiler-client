@@ -5,18 +5,18 @@ import heart from "../../../Assets/Img/heart.svg";
 
 const OneItem = () => {
   return (
-    <div className='w-full border-b border-gray-300 p-4 flex'>
-      <div className='w-3/4 grid gap-2'>
+    <div className='border-b border-gray-300 p-4 flex'>
+      <div className='w-3/4 grid gap-y-2'>
         <h3 className='text-xl font-bold'>Яйця Бенедикт (300г)</h3>
         <p className='text-base text-orange-500 font-bold'>220 UAH</p>
-        <p className='text-sm'>
+        <p className='text-sm w-3/4'>
           Булочки бріош, авокадо, лосось, яйця, соус Голандез, сезонний салат
         </p>
-        <button className='flex border border-gray-300 rounded-md px-4 py-1 items-center hover:border-orange-500 transition'>
+        <button className='w-3/4 flex border border-gray-300 rounded-md px-4 py-1 items-center hover:border-orange-500 transition'>
           <img src={up} alt='up' className='w-6 h-6' />
           <span className='ml-2 text-xs'>Приховати доповнення</span>
         </button>
-        <div className='px-3 py-2 border border-gray-300 rounded-md text-xs'>
+        <div className='w-3/4 px-3 py-2 border border-gray-300 rounded-md text-xs'>
           <h4 className='font-semibold'>Зробити смачніше</h4>
           <div className='mt-1'>
             <div className='flex justify-between items-start'>

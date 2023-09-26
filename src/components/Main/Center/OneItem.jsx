@@ -5,8 +5,8 @@ import heart from "../../../Assets/Img/heart.svg";
 
 const OneItem = () => {
   return (
-    <div className='border-b border-gray-300 p-4 flex'>
-      <div className='w-3/4 grid gap-y-2'>
+    <div className='border-b border-gray-300 p-4 grid grid-cols-3'>
+      <div className='col-span-2 grid gap-y-2'>
         <h3 className='text-xl font-bold'>Яйця Бенедикт (300г)</h3>
         <p className='text-base text-orange-500 font-bold'>220 UAH</p>
         <p className='text-sm w-3/4'>
@@ -29,8 +29,8 @@ const OneItem = () => {
           <img className='h-5 w-5' src={heart} alt='heart' />
         </button>
       </div>
-      <div className='w-1/4'>
-        <img src='https://picsum.photos/seed/picsum/200/300' alt='' className='w-32 h-20' />
+      <div className='justify-self-center'>
+        <img src='https://picsum.photos/seed/picsum/200/300' alt='' className='w-40 h-32' />
       </div>
     </div>
   );

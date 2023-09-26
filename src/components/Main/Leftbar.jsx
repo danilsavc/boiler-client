@@ -15,8 +15,8 @@ const textClasses =
 const Leftbar = () => {
   return (
     <aside className='p-3 bg-white'>
-      <h3 className='font-semibold text-h3'>Меню:</h3>
-      <nav className='flex flex-col space-y-4 mt-3 text-s'>
+      <h3 className='font-semibold text-h3 text-sm lg:text-base'>Меню:</h3>
+      <nav className='flex flex-col space-y-4 mt-3 text-xs lg:text-sm'>
         {titleCategory.map((index, key) => (
           <div key={key}>
             <span className={textClasses}>{index}</span>

@@ -5,9 +5,9 @@ import Footer from "./Footer";
 
 const Layout = () => {
   return (
-    <div>
+    <div className='overflow-auto'>
       <Header />
-      <div className='mx-auto max-w-6xl'>
+      <div className='w-full mx-auto max-w-6xl'>
         <Outlet />
       </div>
       <Footer />

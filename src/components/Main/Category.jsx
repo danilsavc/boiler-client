@@ -12,11 +12,10 @@ const titleCategory = [
 const textClasses =
   "cursor-pointer font-bold hover:text-orange-500 transition-colors active:underline";
 
-const Leftbar = () => {
+const Category = () => {
   return (
     <aside className='p-3 bg-white'>
-      <h3 className='font-semibold text-h3 text-sm lg:text-base'>Меню:</h3>
-      <nav className='flex flex-col space-y-4 mt-3 text-xs lg:text-base'>
+      <nav className='flex text-xl lg:text-2xl gap-x-4 w-full overflow-auto whitespace-nowrap'>
         {titleCategory.map((index, key) => (
           <div key={key}>
             <span className={textClasses}>{index}</span>
@@ -27,4 +26,4 @@ const Leftbar = () => {
   );
 };
 
-export default Leftbar;
+export default Category;

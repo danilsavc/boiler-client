@@ -1,5 +1,7 @@
 import React from "react";
 
+import menu from "../../Assets/Img/menu.svg";
+
 const Header = () => {
   return (
     <div className='w-screen shadow-md fixed z-10 bg-white p-3'>
@@ -8,6 +10,9 @@ const Header = () => {
           <div className=''>
             <h1 className='cursor-pointer text-xl lg:text-2xl font-bold'>The Boiler room</h1>
             <h3 className='cursor-pointer text-lg lg:text-xl font-semibold'>coffe & more</h3>
+          </div>
+          <div className='md:hidden w-12 h-12 flex justify-center items-center border rounded-md'>
+            <img src={menu} alt='menu' className='w-6 h-6' />
           </div>
         </div>
 

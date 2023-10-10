@@ -4,7 +4,7 @@ import instagram from "../../Assets/Img/instagram.svg";
 
 const LeftFooter = () => {
   return (
-    <div className='grid grid-cols-2 gap-x-2'>
+    <div className='grid md:grid-cols-2 gap-x-2'>
       <div className='mb-6'>
         <h3 className='font-bold mb-3'>Контактні дані</h3>
         <div className='grid gap-3'>

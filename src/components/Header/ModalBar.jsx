@@ -12,7 +12,7 @@ const ModalBar = ({ setIsOpen }) => {
 
   return (
     <div
-      className='w-screen h-screen fixed top-0 left-0 bg-neutral-800/50 z-10 grid grid-cols-6'
+      className='w-full h-full fixed top-0 left-0 bg-neutral-800/50 z-10 grid grid-cols-6'
       onClick={handleOutsideClick}
     >
       <div className='h-full col-span-5 bg-white'></div>

@@ -5,7 +5,7 @@ import heart from "../../../Assets/Img/heart.svg";
 
 const OneItem = () => {
   return (
-    <div className='border-b border-gray-300 p-2 grid grid-cols-3'>
+    <div className='border-b border-gray-300 p-2 grid grid-cols-3 last:border-b-0'>
       <div className='col-span-2 grid gap-y-2'>
         <h3 className='text-xl font-bold'>Яйця Бенедикт (300г)</h3>
         <p className='text-base text-orange-500 font-bold'>220 UAH</p>

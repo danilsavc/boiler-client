@@ -4,7 +4,7 @@ import cancel from "../../Assets/Img/cancel.svg";
 
 const ModalBar = ({ active, setActive }) => {
   return (
-    <div className='w-screen h-screen fixed top-0 left-0 bg-neutral-800/50 z-10 grid grid-cols-6'>
+    <div className='w-screen fixed top-0 left-0 bg-neutral-800/50 z-10 grid grid-cols-6'>
       <div className='col-span-5 bg-white overflow-scroll'>
         Sit ut ea commodo id voluptate aliqua non. Aute mollit adipisicing consequat irure aute eu
         fugiat excepteur. Aliquip cupidatat sunt pariatur velit velit amet amet adipisicing proident

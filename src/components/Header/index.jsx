@@ -1,12 +1,10 @@
 import React from "react";
-import Popup from "reactjs-popup";
-import "reactjs-popup/dist/index.css";
 
 import menu from "../../Assets/Img/menu.svg";
 import ModalBar from "./ModalBar";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [modalActive, setModalActive] = React.useState(true);
 
   return (
     <div className='w-screen shadow-md fixed z-10 bg-white p-3'>
@@ -16,16 +14,13 @@ const Header = () => {
             <h1 className='cursor-pointer text-xl lg:text-2xl font-bold'>The Boiler room</h1>
             <h3 className='cursor-pointer text-lg lg:text-xl font-semibold'>coffe & more</h3>
           </div>
-          <button
-            className='md:hidden w-12 h-12 flex justify-center items-center border rounded-md'
-            onClick={() => setIsOpen(true)}
-          >
+          <button className='md:hidden w-12 h-12 flex justify-center items-center border rounded-md'>
             <img src={menu} alt='menu' className='w-6 h-6' />
           </button>
         </div>
-        <Popup open={isOpen} closeOnDocumentClick modal onClick={() => setIsOpen(false)}>
-          <ModalBar setIsOpen={setIsOpen} />
-        </Popup>
+
+        <ModalBar active={modalActive} setActive={setModalActive} />
+
         <nav className='font-semibold lg:text-base text-sm'>
           <span className='hover:text-orange-500 cursor-pointer transition'>Меню</span>
           <span className='hover:text-orange-500 ml-5 cursor-pointer transition'>

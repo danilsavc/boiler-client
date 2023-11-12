@@ -1,11 +1,10 @@
 import React from "react";
 
 import menu from "../../Assets/Img/menu.svg";
-import ModalBar from "./ModalBar";
+// import ModalBar from "./ModalBar";
 
 const Header = () => {
-  const [modalActive, setModalActive] = React.useState(true);
-
+  // const [modalActive, setModalActive] = React.useState(true);
   return (
     <div className='w-screen shadow-md fixed z-10 bg-white p-3'>
       <div className='flex flex-col mx-auto max-w-6xl gap-3'>
@@ -19,7 +18,7 @@ const Header = () => {
           </button>
         </div>
 
-        <ModalBar active={modalActive} setActive={setModalActive} />
+        {/* <ModalBar active={modalActive} setActive={setModalActive} /> */}
 
         <nav className='font-semibold lg:text-base text-sm'>
           <span className='hover:text-orange-500 cursor-pointer transition'>Меню</span>
